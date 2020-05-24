@@ -1,0 +1,41 @@
+*{
+    font-family: Arial;
+    }
+body  {
+    padding=0;
+    margin=0;
+  background-image: url(R.jpg);
+  background-repeat:no_repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.TableForm,.SelectFrom{
+    width:80%;
+    margin: 80px auto;
+    margin-bottom: 0;
+}
+.TableForm table{
+    
+     border-radius: 6px;
+
+}
+.TableForm table tr{
+    width:100%;
+    background: rgba(209, 207, 207, 0.69);
+    padding: 10px;
+    border-radius: 6px;
+    transition: all 400ms ease-in-out;
+}
+.TableForm table tr:hover{
+    background: #fff
+}
+.TableForm table tr th,.TableForm table tr td{
+    padding: 10px;
+    color:#212121;
+}

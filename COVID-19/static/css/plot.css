@@ -1,0 +1,17 @@
+*{
+    font-family: Arial;
+    }
+body  {
+    padding=0;
+    margin=0;
+  background-image: url(C.jpg);
+  background-repeat:no_repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

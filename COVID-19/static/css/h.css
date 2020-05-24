@@ -1,0 +1,11 @@
+*{
+    font-family: Arial;
+    }
+body  {
+    padding=0;
+    margin=0;
+  background-image: url(h.jpg);
+  background-repeat:no_repeat;
+  background-size:cover;
+  background-attachment: fixed;
+}
