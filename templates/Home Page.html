@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> COVID-19 Monitor </title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+</head>
+<body>
+
+<div class="header">
+  <h1>COVID-19 Monitor</h1>
+  
+  <p><b>All you wanna know about the pandemic.</b></p>
+</div>
+
+<div class="topnav">
+  <!--<img src="D:\6th term\software engineering\COVID-19\COVID-19\templates\thumbs_b_c_27bff11da11f9727c09a16b184ae0ad8.jpg" alt="W3Schools.com" style=" background-size: cover;">-->
+  <!--<a href="#">Link</a>-->
+  <!--<a href="#">Link</a>-->
+  <!--<a href="#">Link</a>-->
+  <!--<a href="#" style="float:right">Link</a>-->
+  <!--<h1 style="text-align:center">This is heading 1</h1>-->
+  <h4 style= "text-align:center ; color:White;"  > PLEASE STAY SAFE, STAY HOME!</h4>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><b>Protective measures against Coronavirus</b></h2>
+      <h5>Last update Apr 27, 2020</h5>
+      <h5>For more information you can visit the <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"> World Health Orgnization</a> site  </h5>
+      <!--div class="fakeimg" style="height:200px;">Image</div>*/-->
+      <div class="border">
+          <p><b>Wash your hands regularly</b></p>
+      </div>
+      <p>Wash your hands frequently with water and soup for 20 seconds or use alchol-based hand rub as that kills the virus.</p>
+      <div class="border">
+          <p><b>Keep your distance</b></p>
+      </div>
+      <p>When someone sneezes or coughs the droplets that comes out from his nose or mouth may contain the virus so the best preacution is to keep the distance at least 1 meter which is approximatl 3 feets.</p>
+      <div class="border">
+          <p><b>Avoid touching eyes, nose and mouth</b></p>
+      </div>
+      <p> Virsus can stay on surfaces for very long time, by hands touching these surfaces they got contaminated and can easily transfer the virus through touching them.</p>
+      <div class="border">
+          <p><b>Keep your respiratory hygiene </b></p>
+      </div>
+      <p>That is by coverning the mouth or nose by ment elbows whenever tissues is not found, then getting rid from these tissues ASAP.</p>
+      <div class="border">
+          <p><b>Real symptoms </b></p>
+      </div>
+      <p>If you have fever, dry coughing or diffuclty in breathing, please seek your medical care early.</p>
+
+    </div>
+    <div class="card">
+      <h2>Frequently asked questions</h2>
+      <h5>Last update Apr 27, 2020</h5>
+      <h5>For more information visit the <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html#Coronavirus-Disease-2019-Basics"> CDC </a> site </h5>
+      <!--div class="fakeimg" style="height:200px;">Image</div>-->
+      <div class="border">
+          <p><b>How does the virus spread?</b></p>
+      </div>
+      <p>The virus that causes COVID-19 is thought to spread mainly from person to person, mainly through respiratory droplets produced when an infected person coughs or sneezes. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Spread is more likely when people are in close contact with one another (within about 6 feet).</p>
+      <div class="border">
+          <p><b>Can I get sick with COVID-19 if it's on food?</b></p>
+      </div>
+      <p>Based on information about this novel coronavirus thus far, it seems unlikely that COVID-19 can be transmitted through food – additional investigation is needed.</p>
+      <div class="border">
+          <p><b>Will warm weather stop the outbreak of COVID-19?</b></p>
+      </div>
+      <p>It is not yet known whether weather and temperature affect the spread of COVID-19. Some other viruses, like those that cause the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months.  There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing.</p>
+      <div class="border">
+          <p><b>Can mosquitoes or ticks speard the virus that causes COVID-19?</b></p>
+      </div>
+      <P>At this time,The main way that COVID-19 spreads is from person to person.</P>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+       <h2>Select a Country</h2>
+      <p>Select the country you want from the drop-down list</p>
+<form action="http://localhost:5000/data" method="POST" />
+<div class="form-group">
+<label class="sr-only" for="rating">Country Name:</label>
+<select class="form-control" id="country" name="country">
+   <option value="--select--">select</option>
+   <option value="Afghanistan">Afghanistan</option>
+   <option value="Albania">Albania</option>
+   <option value="Algeria">Algeria</option>
+   <option value="Andorra">Andorra</option>
+   <option value="Angola">Angola</option>
+   <option value="Anguilla">Anguilla</option>
+   <option value="Antigua_and_Barbuda">Antigua & Barbuda</option>
+   <option value="Argentina">Argentina</option>
+   <option value="Armenia">Armenia</option>
+   <option value="Aruba">Aruba</option>
+   <option value="Australia">Australia</option>
+   <option value="Austria">Austria</option>
+   <option value="Azerbaijan">Azerbaijan</option>
+   <option value="Bahamas">Bahamas</option>
+   <option value="Bahrain">Bahrain</option>
+   <option value="Bangladesh">Bangladesh</option>
+   <option value="Barbados">Barbados</option>
+   <option value="Belarus">Belarus</option>
+   <option value="Belgium">Belgium</option>
+   <option value="Belize">Belize</option>
+   <option value="Benin">Benin</option>
+   <option value="Bermuda">Bermuda</option>
+   <option value="Bhutan">Bhutan</option>
+   <option value="Bolivia">Bolivia</option>
+   <option value="Bonaire, Saint Eustantius and Saba">Bonaire</option>
+   <option value="Bosnia_and_ Herzegovina">Bosnia & Herzegovina</option>
+   <option value="Botswana">Botswana</option>
+   <option value="Brazil">Brazil</option>
+   <option value="British_Virgin_Islands">British Indian Ocean Ter</option>
+   <option value="Brunei_Darussalan">Brunei</option>
+   <option value="Bulgaria">Bulgaria</option>
+   <option value="Burkina_Faso">Burkina Faso</option>
+   <option value="Burundi">Burundi</option>
+   <option value="Cambodia">Cambodia</option>
+   <option value="Cameroon">Cameroon</option>
+   <option value="Canada">Canada</option>
+   <option value="Cape_Verde">Cape Verde</option>
+   <option value="Cayman_Islands">Cayman Islands</option>
+   <option value="Central_African_Republic">Central African Republic</option>
+   <option value="Chad">Chad</option>
+   <option value="Chile">Chile</option>
+   <option value="China">China</option>
+   <option value="Colombia">Colombia</option>
+   <option value="Congo">Congo</option>
+   <option value="Costa_Rica">Costa Rica</option>
+   <option value="Cote_dIvoire">Cote DIvoire</option>
+   <option value="Croatia">Croatia</option>
+   <option value="Cuba">Cuba</option>
+   <option value="Curacao">Curacao</option>
+   <option value="Cyprus">Cyprus</option>
+   <option value="Czechis">Czech Republic</option>
+   <option value="Denmark">Denmark</option>
+   <option value="Djibouti">Djibouti</option>
+   <option value="Dominica">Dominica</option>
+   <option value="Dominican_Republic">Dominican Republic</option>
+   <option value="Ecuador">Ecuador</option>
+   <option value="Egypt">Egypt</option>
+   <option value="El_Salvador">El Salvador</option>
+   <option value="Equatorial_Guinea">Equatorial Guinea</option>
+   <option value="Eritrea">Eritrea</option>
+   <option value="Estonia">Estonia</option>
+   <option value="Ethiopia">Ethiopia</option>
+   <option value="Falkland_Islands_(Malvinas)">Falkland Islands</option>
+   <option value="Faroe_Islands">Faroe Islands</option>
+   <option value="Fiji">Fiji</option>
+   <option value="Finland">Finland</option>
+   <option value="France">France</option>
+   <option value="French_Polynesia">French Polynesia</option>
+   <option value="Gabon">Gabon</option>
+   <option value="Gambia">Gambia</option>
+   <option value="Georgia">Georgia</option>
+   <option value="Germany">Germany</option>
+   <option value="Ghana">Ghana</option>
+   <option value="Gibraltar">Gibraltar</option>
+   <option value="Great Britain">Great Britain</option>
+   <option value="Greece">Greece</option>
+   <option value="Greenland">Greenland</option>
+   <option value="Grenada">Grenada</option>
+   <option value="Guam">Guam</option>
+   <option value="Guatemala">Guatemala</option>
+   <option value="Guinea">Guinea</option>
+   <option value="Guyana">Guyana</option>
+   <option value="Haiti">Haiti</option>
+   <option value="Honduras">Honduras</option>
+   <option value="Hungary">Hungary</option>
+   <option value="Iceland">Iceland</option>
+   <option value="Indonesia">Indonesia</option>
+   <option value="India">India</option>
+   <option value="Iran">Iran</option>
+   <option value="Iraq">Iraq</option>
+   <option value="Ireland">Ireland</option>
+   <option value="Isle_of_Man">Isle of Man</option>
+   <option value="Israel">Israel</option>
+   <option value="Italy">Italy</option>
+   <option value="Jamaica">Jamaica</option>
+   <option value="Japan">Japan</option>
+   <option value="Jordan">Jordan</option>
+   <option value="Kazakhstan">Kazakhstan</option>
+   <option value="Kenya">Kenya</option>
+   <option value="Kuwait">Kuwait</option>
+   <option value="Kyrgyzstan">Kyrgyzstan</option>
+   <option value="Laos">Laos</option>
+   <option value="Latvia">Latvia</option>
+   <option value="Lebanon">Lebanon</option>
+   <option value="Liberia">Liberia</option>
+   <option value="Libya">Libya</option>
+   <option value="Liechtenstein">Liechtenstein</option>
+   <option value="Lithuania">Lithuania</option>
+   <option value="Luxembourg">Luxembourg</option>
+   <option value="Madagascar">Madagascar</option>
+   <option value="Malaysia">Malaysia</option>
+   <option value="Malawi">Malawi</option>
+   <option value="Maldives">Maldives</option>
+   <option value="Mali">Mali</option>
+   <option value="Malta">Malta</option>
+   <option value="Mauritania">Mauritania</option>
+   <option value="Mauritius">Mauritius</option>
+   <option value="Mexico">Mexico</option>
+   <option value="Moldova">Moldova</option>
+   <option value="Monaco">Monaco</option>
+   <option value="Mongolia">Mongolia</option>
+   <option value="Montserrat">Montserrat</option>
+   <option value="Morocco">Morocco</option>
+   <option value="Mozambique">Mozambique</option>
+   <option value="Myanmar">Myanmar</option>
+   <option value="Nepal">Nepal</option>
+   <option value="Netherlands">Netherlands (Holland, Europe)</option>
+   <option value="New_Caledonia">New Caledonia</option>
+   <option value="New_Zealand">New Zealand</option>
+   <option value="Nicaragua">Nicaragua</option>
+   <option value="Niger">Niger</option>
+   <option value="Nigeria">Nigeria</option>
+   <option value="Norway">Norway</option>
+   <option value="Oman">Oman</option>
+   <option value="Pakistan">Pakistan</option>
+   <option value="Palau Island">Palau Island</option>
+   <option value="Palestine">Palestine</option>
+   <option value="Panama">Panama</option>
+   <option value="Papua_New_Guinea">Papua New Guinea</option>
+   <option value="Paraguay">Paraguay</option>
+   <option value="Peru">Peru</option>
+   <option value="Phillipines">Philippines</option>
+   <option value="Pitcairn Island">Pitcairn Island</option>
+   <option value="Poland">Poland</option>
+   <option value="Portugal">Portugal</option>
+   <option value="Puerto_Rico">Puerto Rico</option>
+   <option value="Qatar">Qatar</option>
+   <option value="Romania">Romania</option>
+   <option value="Russia">Russia</option>
+   <option value="Rwanda">Rwanda</option>
+   <option value="Saint_Kitts_and_Nevis">St Kitts-Nevis</option>
+   <option value="Saint_Lucia">St Lucia</option>
+   <option value="Saint_Vincent_and_the_Grenadines">St Vincent & Grenadines</option>
+   <option value="San_Marino">San Marino</option>
+   <option value="Sao_Tome_and_Principe">Sao Tome & Principe</option>
+   <option value="Saudi_Arabia">Saudi Arabia</option>
+   <option value="Senegal">Senegal</option>
+   <option value="Seychelles">Seychelles</option>
+   <option value="Sierra_Leone">Sierra Leone</option>
+   <option value="Singapore">Singapore</option>
+   <option value="Slovakia">Slovakia</option>
+   <option value="Slovenia">Slovenia</option>
+   <option value="Somalia">Somalia</option>
+   <option value="South_Africa">South Africa</option>
+   <option value="South_Korea">South Korea</option>
+   <option value="South_Sodan">South Sodan</option>
+   <option value="Spain">Spain</option>
+   <option value="Sri_Lanka">Sri Lanka</option>
+   <option value="Sudan">Sudan</option>
+   <option value="Suriname">Suriname</option>
+   <option value="Sweden">Sweden</option>
+   <option value="Switzerland">Switzerland</option>
+   <option value="Syria">Syria</option>
+   <option value="Taiwan">Taiwan</option>
+   <option value="Thailand">Thailand</option>
+   <option value="Togo">Togo</option>
+   <option value="Trinidad_and_Tobago">Trinidad & Tobago</option>
+   <option value="Tunisia">Tunisia</option>
+   <option value="Turkey">Turkey</option>
+   <option value="Turks_and_Caicos_islands">Turks & Caicos Is</option>
+   <option value="Uganda">Uganda</option>
+   <option value="Ukraine">Ukraine</option>
+   <option value="United_Arab_Emirates">UAE</option>
+   <option value="United_Kingdom"> UK </option>
+   <option value="United_States_of_America">USA</option>
+   <option value="Uraguay">Uruguay</option>
+   <option value="Uzbekistan">Uzbekistan</option>
+   <option value="Venezuela">Venezuela</option>
+   <option value="Vietnam">Vietnam</option>
+   <option value="Yemen">Yemen</option>
+   <option value="Zambia">Zambia</option>
+   <option value="Zimbabwe">Zimbabwe</option>
+</select>
+</div>
+
+<div class="form-group">
+<label class="sr-only" for="Data type">Data Type:</label>
+<select class="form-control" id="Type" name="Type">
+   <option value="--select--">select</option>
+   <option value="cases_cum">Total Cases</option>
+   <option value="deaths_cum">Total Deaths</option>
+   <option value="deaths">Daily Deaths</option>
+   <option value="cases">Daily Cases</option>
+</select>
+</div>
+<div>
+<label class="btn"><input type = "submit" value = "Show Data" name="Show Data" /></label>
+<label class="btn"><input type = "submit" value = "Plot Data" name="Show Data" /></label>
+<label class="btn"><input type = "submit" value = "Find R0" name="Show Data" /></label>
+
+</form>
+</div>
+</div>
+
+<div class="Contacts">
+    <div class="card">
+      <h3>For more information</h3>
+      <p> you can visit the <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1"> World Health Orgnization</a> site  </p>
+      <p>or you can visit <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"> CDC </a> site  </p>
+      <h3>In case of emergenicies</h3>
+      <p>Call the hotline 15335-105 of The Egyptian Ministry of Health and Population </p>
+    </div>      
+</div>
+</div>
+  
+
+<!--<div class="footer">-->
+ <!-- <h2>Footer</h2>-->
+<!--</div>-->
+
+</body>
+</html>
+
+

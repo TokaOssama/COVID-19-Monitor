@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title> COVID-19 Monitor </title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/plott.css') }}">
+
+    </head>
+    <body>
+        <form action = "http://localhost:5000/data_plot" method = "POST" class="TableForm">
+            <table >
+                 {% for key, value in data.items() %}
+                    <tr>
+                       <th> {{ key }} </th>
+                       <td> {{ value }} </td>
+                    </tr>
+                 {% endfor %}
+            </table>
+
+        <!--<label class="btn"><input type = "submit" value = "Plot The Data" /></label>-->
+      </form>
+   </body>
+</html>
